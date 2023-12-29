@@ -85,4 +85,7 @@ bdfinal <- mutate(bdfinal, dre =
                               dre == "San martin" ~ "San Martín",
                               TRUE ~ dre))
 
-rio::export(bdfinal, here("00-insumos", "padron2.rds"))
+rio::export(bdfinal, here("data", "padron2.rds"))
+
+
+# rio::import("https://github.com/diegohc1/padron-ie/raw/main/data/padron2.rds")
